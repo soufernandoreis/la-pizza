@@ -3,197 +3,651 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LÁ PIZZA - Peça Online Agora</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>N1 Inteligencia Digital — Consultoria e Automação com IA</title>
+    <meta name="description" content="Consultoria de IA que aumenta vendas, libera o time e automatiza tarefas repetitivas. Projetos de IA sob medida para acelerar atendimento, finanças e operações.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="N1 Inteligencia Digital — Consultoria e Automação com IA">
+    <meta property="og:description" content="Consultoria de IA que aumenta vendas, libera o time e automatiza tarefas repetitivas. Projetos de IA sob medida para acelerar atendimento, finanças e operações.">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="N1 Inteligencia Digital — Consultoria e Automação com IA">
+    <meta property="twitter:description" content="Consultoria de IA que aumenta vendas, libera o time e automatiza tarefas repetitivas. Projetos de IA sob medida para acelerar atendimento, finanças e operações.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Configuração para font-serif usar fontes do sistema */
+        .font-serif {
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>LÁ PIZZA</h1>
-            </div>
-            <nav class="nav">
-                <a href="#home">Início</a>
-                <a href="#cardapio">Cardápio</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
+<body class="bg-slate-50 text-slate-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-300/80 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-serif text-xl font-bold text-slate-900">N1 Inteligencia Digital</div>
+            <a href="#diagnostico" class="inline-flex items-center rounded-lg px-5 py-3 font-semibold text-white bg-teal-700 hover:bg-teal-800 shadow transition-colors">
+                Agende seu diagnóstico
+            </a>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Pizza Artesanal <span>Direto Para Sua Casa</span></h2>
-                    <p class="hero-subtitle">Peça agora e receba em até 45 minutos. Massa fresca, ingredientes selecionados e muito sabor!</p>
-                    <a href="https://wa.me/5562982331156?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" 
-                       class="cta-button" 
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
-                        </svg>
-                        Pedir pelo WhatsApp
-                    </a>
-                </div>
-                <div class="hero-image">
-                    <div class="pizza-illustration"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Entrega Rápida</h3>
-                        <p>Receba sua pizza em até 45 minutos</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🍕</div>
-                        <h3>Pizza Artesanal</h3>
-                        <p>Massa fresca e ingredientes selecionados</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">💳</div>
-                        <h3>Pagamento Fácil</h3>
-                        <p>Aceitamos PIX, cartão e dinheiro</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⭐</div>
-                        <h3>Qualidade Premium</h3>
-                        <p>Receitas tradicionais com toque especial</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Menu Section -->
-        <section id="cardapio" class="menu">
-            <div class="container">
-                <h2 class="section-title">Nosso Cardápio</h2>
-                <p class="section-subtitle">Escolha sua pizza favorita e peça pelo WhatsApp</p>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="menu-item-image margherita"></div>
-                        <h3>Margherita</h3>
-                        <p>Molho de tomate, mussarela e manjericão</p>
-                        <span class="price">R$ 35,90</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-image pepperoni"></div>
-                        <h3>Pepperoni</h3>
-                        <p>Mussarela, pepperoni e orégano</p>
-                        <span class="price">R$ 42,90</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-image calabresa"></div>
-                        <h3>Calabresa</h3>
-                        <p>Calabresa, cebola e azeitonas</p>
-                        <span class="price">R$ 38,90</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-image portuguesa"></div>
-                        <h3>Portuguesa</h3>
-                        <p>Presunto, ovos, cebola e azeitonas</p>
-                        <span class="price">R$ 40,90</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-image frango"></div>
-                        <h3>Frango com Catupiry</h3>
-                        <p>Frango desfiado e catupiry</p>
-                        <span class="price">R$ 39,90</span>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-image quatro-queijos"></div>
-                        <h3>Quatro Queijos</h3>
-                        <p>Mussarela, gorgonzola, parmesão e catupiry</p>
-                        <span class="price">R$ 44,90</span>
-                    </div>
-                </div>
-                <div class="menu-cta">
-                    <a href="https://wa.me/5562982331156?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" 
-                       class="cta-button" 
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
-                        </svg>
-                        Ver Cardápio Completo no WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="sobre" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2 class="section-title">Sobre a LÁ PIZZA</h2>
-                        <p>Somos apaixonados por pizza! Desde 2010, preparamos pizzas artesanais com receitas tradicionais e ingredientes da mais alta qualidade.</p>
-                        <p>Nossa massa é preparada diariamente, sempre fresca, e nossos ingredientes são cuidadosamente selecionados para garantir o melhor sabor em cada pedaço.</p>
-                        <p>Peça online e receba em casa com toda a praticidade e sabor que você merece!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Final Section -->
-        <section class="cta-final">
-            <div class="container">
-                <h2>Pronto para Pedir?</h2>
-                <p>Peça agora pelo WhatsApp e receba sua pizza quentinha em casa!</p>
-                <a href="https://wa.me/5562982331156?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" 
-                   class="cta-button large" 
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
-                    </svg>
-                    Pedir Agora pelo WhatsApp
+    <!-- Hero Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                Consultoria de IA que <span class="text-teal-700">aumenta vendas</span>, <span class="text-teal-700">libera o time</span> e <span class="text-teal-700">automatiza tarefas repetitivas</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-600 mb-10 max-w-3xl mx-auto">
+                Projetos de IA sob medida para acelerar atendimento, finanças e operações — sem reescrever seus processos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center rounded-lg px-5 py-3 font-semibold text-white bg-teal-700 hover:bg-teal-800 shadow transition-colors">
+                    Agende seu diagnóstico
+                </a>
+                <a href="#passo-a-passo" 
+                   class="inline-flex items-center rounded-lg px-5 py-3 font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition-colors">
+                    Ver como funciona
                 </a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="max-w-6xl mx-auto mt-16 border-b border-slate-300/80"></div>
+    </section>
 
-    <footer id="contato" class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>LÁ PIZZA</h3>
-                    <p>Pizza artesanal direto para sua casa</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>📱 WhatsApp: 5562982331156</p>
-                    <p>📧 Email: contato@lapizza.com.br</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Horário de Funcionamento</h4>
-                    <p>Segunda a Domingo</p>
-                    <p>18:00 às 23:30</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Facebook</a>
+    <!-- Passo a Passo -->
+    <section id="passo-a-passo" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-900 mb-12 text-center border-b border-slate-300/80 pb-6">
+                O passo a passo para elevar a produtividade da sua empresa com IA
+            </h2>
+            
+            <div class="relative">
+                <!-- Linha vertical -->
+                <div class="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-slate-300"></div>
+                
+                <!-- Etapas -->
+                <div class="space-y-12">
+                    <!-- Etapa 1 -->
+                    <div class="relative flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-teal-700 text-white flex items-center justify-center font-bold text-xl z-10">
+                            1
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">
+                                Mapeamos onde você estão suas perdas
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Fazemos uma análise completa dos processos da sua empresa para identificar gargalos, desperdícios de tempo e oportunidades de automação. Descobrimos exatamente onde a IA pode gerar mais impacto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 2 -->
+                    <div class="relative flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-teal-700 text-white flex items-center justify-center font-bold text-xl z-10">
+                            2
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">
+                                Criamos agentes para cada setor
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Desenvolvemos agentes de IA personalizados para cada área da sua empresa. Cada agente é treinado para executar tarefas específicas, integrando-se perfeitamente com seus sistemas existentes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 3 -->
+                    <div class="relative flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-teal-700 text-white flex items-center justify-center font-bold text-xl z-10">
+                            3
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">
+                                Teste em ambiente real
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Implementamos os agentes de IA em ambiente controlado, permitindo que sua equipe teste e valide cada funcionalidade antes do lançamento completo. Ajustes são feitos em tempo real conforme necessário.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Etapa 4 -->
+                    <div class="relative flex flex-col md:flex-row gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-teal-700 text-white flex items-center justify-center font-bold text-xl z-10">
+                            4
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900 mb-3">
+                                Suas IAs começam a operar e otimizar seu negócio
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Com tudo validado, seus agentes de IA entram em operação completa. Eles trabalham 24/7, aprendem continuamente e otimizam processos automaticamente, liberando sua equipe para atividades estratégicas.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 LÁ PIZZA. Todos os direitos reservados.</p>
+
+            <div class="text-center mt-12">
+                <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center rounded-lg px-5 py-3 font-semibold text-white bg-teal-700 hover:bg-teal-800 shadow transition-colors">
+                    Agende seu diagnóstico
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departamento de IA -->
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-900 mb-12 text-center border-b border-slate-300/80 pb-6">
+                É como ter um departamento de IA dentro da sua empresa
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Coluna Esquerda -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Atendimento e Vendas</h3>
+                        <p class="text-slate-600">
+                            Agentes de IA que atendem clientes, qualificam leads e fecham vendas 24/7, aumentando a conversão e melhorando a experiência do cliente.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">CRM</h3>
+                        <p class="text-slate-600">
+                            Automação inteligente de relacionamento com clientes, organização de dados e acompanhamento de oportunidades de negócio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Coluna Centro -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Marketing</h3>
+                        <p class="text-slate-600">
+                            Criação de campanhas, análise de performance, segmentação de público e geração de conteúdo otimizado para conversão.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Processos</h3>
+                        <p class="text-slate-600">
+                            Automação de fluxos de trabalho, otimização de rotinas operacionais e eliminação de tarefas repetitivas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Financeiro</h3>
+                        <p class="text-slate-600">
+                            Gestão de contas a pagar e receber, análise de fluxo de caixa, previsões financeiras e relatórios automatizados.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">RH</h3>
+                        <p class="text-slate-600">
+                            Recrutamento inteligente, triagem de currículos, análise de perfil de candidatos e gestão de processos seletivos.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                        <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Dados e Estratégia</h3>
+                        <p class="text-slate-600">
+                            Análise de dados em tempo real, geração de insights estratégicos e suporte à tomada de decisão baseada em dados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center rounded-lg px-5 py-3 font-semibold text-white bg-teal-700 hover:bg-teal-800 shadow transition-colors">
+                    Agende seu diagnóstico
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos por Área -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-900 mb-6 text-center border-b border-slate-300/80 pb-6">
+                Nossos Módulos de IA por Área
+            </h2>
+            <p class="text-center text-lg text-slate-600 mb-12 max-w-3xl mx-auto">
+                Oferecemos <strong>soluções especializadas</strong> para cada departamento da sua empresa. Cada módulo é <strong>personalizado</strong> e integrado aos seus sistemas existentes, garantindo <strong>resultados imediatos</strong> e <strong>ROI mensurável</strong>.
+            </p>
+
+            <div class="space-y-4">
+                <!-- Módulo 1: Atendimento ao Cliente -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-1"
+                        onclick="toggleAccordion('modulo-1', this)">
+                        <span>Atendimento ao Cliente</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-1">+</span>
+                    </button>
+                    <div id="modulo-1" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Chatbots inteligentes que atendem clientes 24/7 com respostas precisas e personalizadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Análise de sentimento para identificar e resolver problemas antes que escalem</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Automação de tickets e roteamento inteligente de solicitações</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Integração com seus canais de atendimento (WhatsApp, email, chat)</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulo 2: Financeiro e Cobrança -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-2"
+                        onclick="toggleAccordion('modulo-2', this)">
+                        <span>Financeiro e Cobrança</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-2">+</span>
+                    </button>
+                    <div id="modulo-2" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Automação de cobrança com follow-up inteligente e personalizado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Análise de risco de crédito e previsão de inadimplência</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Reconciliação automática de contas e relatórios financeiros</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Otimização de fluxo de caixa com previsões precisas</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3tico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulo 3: Análise de Dados -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-3"
+                        onclick="toggleAccordion('modulo-3', this)">
+                        <span>Análise de Dados</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-3">+</span>
+                    </button>
+                    <div id="modulo-3" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Dashboards inteligentes com insights em tempo real</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Previsões e tendências baseadas em machine learning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Análise de padrões e correlações em grandes volumes de dados</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Relatórios automáticos personalizados para cada stakeholder</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulo 4: Otimização de Processos -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-4"
+                        onclick="toggleAccordion('modulo-4', this)">
+                        <span>Otimização de Processos</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-4">+</span>
+                    </button>
+                    <div id="modulo-4" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Mapeamento e otimização de fluxos de trabalho</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Automação de aprovações e workflows</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Eliminação de gargalos e redundâncias</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Monitoramento contínuo e melhoria de processos</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulo 5: Recrutamento e RH -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-5"
+                        onclick="toggleAccordion('modulo-5', this)">
+                        <span>Recrutamento e RH</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-5">+</span>
+                    </button>
+                    <div id="modulo-5" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Triagem automática de currículos com matching inteligente</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Análise de perfil e fit cultural dos candidatos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Automação de agendamento de entrevistas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Onboarding inteligente de novos colaboradores</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulo 6: Marketing e Conteúdo -->
+                <div class="bg-slate-50 border border-slate-300/80 rounded-lg overflow-hidden">
+                    <button 
+                        class="w-full px-6 py-5 text-left flex justify-between items-center font-serif text-xl font-bold text-slate-900 hover:bg-slate-100 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="modulo-6"
+                        onclick="toggleAccordion('modulo-6', this)">
+                        <span>Marketing e Conteúdo</span>
+                        <span class="text-teal-700 text-2xl" id="icon-modulo-6">+</span>
+                    </button>
+                    <div id="modulo-6" class="hidden px-6 pb-5" role="region">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Geração de conteúdo otimizado para SEO e conversão</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Personalização de campanhas por segmento de público</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Análise de performance e otimização automática de anúncios</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-teal-700 mr-2">•</span>
+                                <span>Automação de email marketing e nurturance de leads</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 transition-colors">
+                                Saiba mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Final -->
+    <section id="diagnostico" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-900 mb-12 text-center border-b border-slate-300/80 pb-6">
+                A <span class="text-teal-700">N1 Inteligencia Digital</span> é para você se…
+            </h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6 mb-12">
+                <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">
+                        Você quer aumentar suas vendas sem aumentar o time?
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Agentes de IA que qualificam leads e fecham vendas 24/7</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Automação de follow-up que nunca esquece um cliente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Análise de oportunidades de upsell e cross-sell</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">
+                        Sua equipe perde tempo com tarefas repetitivas?
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Automação de processos que libera até 20 horas semanais por pessoa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Eliminação de trabalho manual em relatórios e análises</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Foco da equipe em atividades estratégicas e de crescimento</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">
+                        Você precisa de insights para tomar decisões melhores?
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Dashboards em tempo real com métricas importantes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Previsões precisas baseadas em dados históricos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Recomendações estratégicas automatizadas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-300/80">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">
+                        Você quer escalar sem aumentar custos operacionais?
+                    </h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>IA que trabalha 24/7 sem custos de folha de pagamento</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>Capacidade de processar volumes ilimitados de trabalho</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">•</span>
+                            <span>ROI mensurável e rápido retorno sobre investimento</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center max-w-3xl mx-auto">
+                <h3 class="font-serif text-3xl font-bold text-slate-900 mb-6">
+                    Receba um plano personalizado de IA para automatizar sua empresa
+                </h3>
+                <a href="https://wa.me/5562982331156?text=Quero%20diagn%C3%B3stico%20de%20IA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center rounded-lg px-8 py-4 text-lg font-semibold text-white bg-teal-700 hover:bg-teal-800 shadow-lg transition-colors">
+                    Agende seu diagnóstico
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-300/80 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <div class="font-serif text-xl font-bold text-slate-900">N1 Inteligencia Digital</div>
+                <div class="text-slate-600">
+                    <p>Email: <a href="mailto:fernando.nandoreis@gmail.com" class="text-teal-700 hover:text-teal-800 underline">fernando.nandoreis@gmail.com</a></p>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-slate-600 hover:text-teal-700">Privacidade</a>
+                    <a href="#" class="text-slate-600 hover:text-teal-700">Termos</a>
+                </div>
+            </div>
+            <div class="text-center text-sm text-slate-500 border-t border-slate-300/80 pt-6">
+                <p>© N1 Inteligencia Digital — Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Script para Accordion -->
+    <script>
+        function toggleAccordion(moduloId, button) {
+            const content = document.getElementById(moduloId);
+            const icon = document.getElementById('icon-' + moduloId);
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Fecha todos os outros accordions (opcional - remover se quiser permitir múltiplos abertos)
+            // document.querySelectorAll('[role="region"]').forEach(region => {
+            //     if (region.id !== moduloId) {
+            //         region.classList.add('hidden');
+            //         const btn = document.querySelector(`[aria-controls="${region.id}"]`);
+            //         if (btn) {
+            //             btn.setAttribute('aria-expanded', 'false');
+            //             const ico = document.getElementById('icon-' + region.id);
+            //             if (ico) ico.textContent = '+';
+            //         }
+            //     }
+            // });
+
+            // Alterna o atual
+            if (isExpanded) {
+                content.classList.add('hidden');
+                button.setAttribute('aria-expanded', 'false');
+                icon.textContent = '+';
+            } else {
+                content.classList.remove('hidden');
+                button.setAttribute('aria-expanded', 'true');
+                icon.textContent = '−';
+            }
+        }
+
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#diagnostico') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
